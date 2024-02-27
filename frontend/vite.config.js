@@ -9,7 +9,7 @@ export default defineConfig({
 		proxy: {
 			"/api": {
 				// target: import.meta.env.VITE_API_URL,
-				target: 'https://masta-chat-app-server.vercel.app',
+				target: 'https://masta-chat-app.vercel.app',
 			},
 		},
 	},
