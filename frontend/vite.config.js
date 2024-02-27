@@ -8,7 +8,8 @@ export default defineConfig({
 		port: 3000,
 		proxy: {
 			"/api": {
-				target: import.meta.env.VITE_API_URL,
+				// target: import.meta.env.VITE_API_URL,
+				target: 'https://masta-chat-app-server.vercel.app',
 				changeOrigin: true,
 				rewrite: (path) => path.replace(/^\/api/, ''),
 			},
