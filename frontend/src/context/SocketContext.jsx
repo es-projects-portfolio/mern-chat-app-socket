@@ -17,7 +17,7 @@ export const SocketContextProvider = ({ children }) => {
 
 	useEffect(() => {
 		if (authUser) {
-			const socket = io("https://masta-chat-app-server.vercel.app", {
+			const socket = io("https://mern-chat-app-1nhq.onrender.com", {
 			// const socket = io(import.meta.env.VITE_API_URL, {
 			// const socket = io("http://localhost:5000", {
 				query: {

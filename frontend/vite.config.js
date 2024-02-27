@@ -8,8 +8,7 @@ export default defineConfig({
 		port: 3000,
 		proxy: {
 			"/api": {
-				// target: import.meta.env.VITE_API_URL,
-				target: 'https://masta-chat-app.vercel.app',
+				target: "http://localhost:5000",
 			},
 		},
 	},
